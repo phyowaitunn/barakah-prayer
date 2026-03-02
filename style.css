@@ -66,3 +66,64 @@ transition:1s;
 .dark{
 background:#121212;
 }
+
+/* HERO BACKGROUND */
+.hero{
+height:100vh;
+background:
+linear-gradient(
+rgba(0,0,0,0.65),
+rgba(0,0,0,0.75)
+),
+url("bg-prayer.jpg");
+
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+/* Overlay Content */
+.overlay{
+width:95%;
+max-width:420px;
+}
+
+/* Title */
+.app-title{
+font-size:26px;
+margin-bottom:10px;
+font-weight:bold;
+}
+
+/* Prayer Box */
+.prayer-box{
+margin-top:20px;
+}
+
+/* Glass Cards */
+.card{
+display:flex;
+justify-content:space-between;
+padding:14px;
+margin:10px 0;
+border-radius:15px;
+
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+}
+
+/* Active Prayer Glow */
+.activePrayer{
+background:linear-gradient(135deg,#00c6ff,#0072ff);
+box-shadow:0 0 20px #00c6ff;
+}

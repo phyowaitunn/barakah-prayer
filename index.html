@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barakah Prayer MY</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f2027">
+</head>
+<body>
+
+<div id="splash">
+<h1>🕌 Barakah Prayer</h1>
+<p>Loading...</p>
+</div>
+
+<div id="sidebar">
+<a onclick="showPage('home')">Home</a>
+<a onclick="showPage('qibla')">Qibla</a>
+<a onclick="showPage('calendar')">Calendar</a>
+<a onclick="showPage('about')">About</a>
+</div>
+
+<div class="app">
+
+<header>
+<button onclick="toggleMenu()">☰</button>
+<h2>Barakah Prayer MY</h2>
+<button onclick="toggleTheme()">🌙</button>
+</header>
+
+<section id="home" class="page active">
+<p id="gregorianDate"></p>
+<p id="hijriDate"></p>
+<h3 id="countdown"></h3>
+
+<div class="card" id="FajrCard">Fajr <b id="fajr"></b></div>
+<div class="card" id="DhuhrCard">Dhuhr <b id="dhuhr"></b></div>
+<div class="card" id="AsrCard">Asr <b id="asr"></b></div>
+<div class="card" id="MaghribCard">Maghrib <b id="maghrib"></b></div>
+<div class="card" id="IshaCard">Isha <b id="isha"></b></div>
+</section>
+
+<section id="qibla" class="page">
+<h3>Qibla Direction</h3>
+<div id="compass">🧭</div>
+<p id="qiblaAngle"></p>
+</section>
+
+<section id="calendar" class="page">
+<h3>Hijri Calendar</h3>
+<div id="calendarTable"></div>
+</section>
+
+<section id="about" class="page">
+<p>Developed by Phyo Wai Tun</p>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
